@@ -1,0 +1,306 @@
+/* 
+
+    font-family: 'Cairo', sans-serif; 
+
+    font-family: 'Pangolin', cursive;
+
+
+
+*/
+
+
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+  
+header{
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7) , rgba(4,9,30,0.7)),url(./images/background1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    font-family: 'Cairo', sans-serif; 
+}
+
+nav{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% 6%;
+}
+
+
+nav .logo{
+
+    font-family: 'Pangolin', cursive;
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 30px;
+}
+
+nav .one{
+
+    color: yellow;
+}
+
+nav .nav-links{
+
+    flex: 1;
+    text-align: right;
+}
+
+nav .nav-links ul li{
+
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+nav .nav-links ul li a{
+    font-weight: bold;
+    font-size: 17px;
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+nav .nav-links ul li .about::after{
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: yellow;
+    display: block;
+    margin: auto;
+}
+
+nav .nav-links  .home::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background: yellow;
+    display: block;
+    margin: auto;
+    transition: .5s;
+}
+nav .nav-links  .user::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background: yellow;
+    display: block;
+    margin: auto;
+    transition: .5s;
+}
+nav .nav-links  .contact::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background: yellow;
+    display: block;
+    margin: auto;
+    transition: .5s;
+}
+
+nav .nav-links .home:hover::after{
+
+    width: 100%;
+}
+nav .nav-links .user:hover::after{
+
+    width: 100%;
+}
+nav .nav-links .contact:hover::after{
+
+    width: 100%;
+}
+
+
+nav .fa{
+
+    display: none ;
+}
+
+@media(max-width: 700px){
+
+    .text-box .two{
+
+        font-size: 40px;
+       
+    }
+    
+    .text-box .three{
+    
+        font-size: 19px;
+        
+    }
+
+    .text-box p{
+       
+        margin: 0px 0 30px;
+        font-size: 13px;
+        
+    }
+ 
+    nav .nav-links ul li{
+        display: block;
+    }
+
+    nav .nav-links ul li a{
+
+        color: black;
+    }
+    nav .nav-links{
+        position: absolute;
+        background: yellow;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+
+    nav .fa{
+        display: block;
+        color: black;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+
+    nav .nav-links ul {
+
+        padding: 30px;
+        text-align: center;
+    }
+
+
+
+
+}
+
+.footer{
+    width: 100%;
+    text-align: center;
+    font-family: 'Cairo', sans-serif;
+}
+
+.footer h3{
+
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+.icons .fa{
+
+    color: #a2a222f2;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+}
+
+.fa-heart-o{
+
+    color: #a2a222f2;
+
+
+}
+
+.sup-header{
+    font-family: 'Cairo', sans-serif;
+    background-image: linear-gradient(rgba(4,9,30,0.7) , rgba(4,9,30,0.7)),url(./images/about.jpg);
+    height: 50vh;
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: white;
+
+}
+
+.sup-header h1{
+
+    font-size: 38px;
+}
+
+.about-us{
+    font-family: 'Cairo', sans-serif;  
+    width: 80%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
+    
+}
+
+.about-col{
+
+    flex-basis:  48%;
+    padding: 30px 2px ;
+}
+.about-col img{
+
+    width: 100%;
+}
+
+.row {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-col h2{
+
+    padding-top: 0;
+    width: 100%;
+}
+
+.about-col p{
+
+    padding: 15px 0 25px;
+    color: rgba(0, 0, 0, 0.563);
+}
+
+
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 2px solid #fff;
+    padding: 10px 70px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.yellow-btn{
+
+    border: 2px solid  yellow;
+    background: transparent;
+    color: rgba(124, 124, 59, 0.85);
+}
+.hero-btn:hover{
+    border: 2px solid yellow;
+    background-color: yellow;
+    transition: 1s;
+    color: black;
+}
+
+@media(max-width: 700px){
+
+ .row{
+    flex-direction: column;
+ }
+
+}
+
+
+

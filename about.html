@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--            Google Fonts                            -->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
+<!--            Css Link                               -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="style-about.css">
+<!--            Icon                                   -->
+    <link rel="icon" href="./images/logo1.png">
+<!--            Font Awesome                     -->
+    <title>Fullvie - About Us  </title>
+</head>
+<body>
+    
+    <section class="sup-header">
+         <nav>
+                <a href="#" class="logo"><h3>Fu<span class="one">llv</span>ie</h3></a>
+
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+
+                    <ul>
+                            <li><a href="index.html" class="home">Home</a></li>
+                            <li><a href="#" class="about">About Us</a></li>
+                            <li><a href="user.html" class="user">Users</a></li>
+                            <li><a href="Contact.html" class="contact">Contect Us</a></li>
+                        
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+         </nav>
+
+         <h1>About Us</h1>
+    </section>
+
+<!--                         About Us -->
+
+    <section class="about-us">
+
+        <div class="row">
+            <div class="about-col">
+                <h2>We aim to achieve the most famous and progress for you </h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore consequuntur incidunt voluptatem numquam cumque saepe libero natus, magnam cum porro quia? Aspernatur pariatur fugiat quo maxime amet ea porro quas?</p>
+                <a href="" class="hero-btn yellow-btn">Join Now</a>
+            </div>
+
+            <div class="about-col">
+                <img src="./images/goal.jpg" alt="" >
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+    <!--                        footer               -->
+    <section class="footer">
+
+        <h3>About As</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque repellendus eveniet soluta adipisci.<br> Inventore sed cupiditate sit reprehenderit ipsam autem!</p>
+
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-youtube-play"></i>
+        </div>
+
+        <p>Made With <i class="fa fa-heart-o"></i> Mohamed Fares </p>
+
+    </section>
+
+
+
+
+
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+    
+     function showMenu(){
+    
+         navLinks.style.right = "0";
+
+    
+    } 
+    
+    function hideMenu() {
+    
+            navLinks.style.right = "-200px";
+    
+    }
+    
+</script>
+
+</body>
+</html>
